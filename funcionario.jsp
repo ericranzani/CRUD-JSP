@@ -54,7 +54,7 @@
          if (document.cadastro.fun_codigoField.value == ''){  
             document.cadastro.statusField.value = 'Preencha o campo codigo';  
          }else {  
-            document.cadastro.action='consultar_founcionario.jsp';  
+            document.cadastro.action='consultar_funcionario.jsp';  
             document.cadastro.submit();  
          }  
      

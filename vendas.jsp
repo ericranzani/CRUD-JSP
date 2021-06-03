@@ -63,7 +63,7 @@
 
       } else if (par == 'excluir'){  
      
-         if (document.cadastro.com_codigoField.value == ''){  
+         if (document.cadastro.ven_codigoField.value == ''){  
             document.cadastro.statusField.value = 'Preencha o codigo';  
          }else {  
             document.cadastro.action='excluir_vendas.jsp';  

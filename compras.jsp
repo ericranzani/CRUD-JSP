@@ -90,7 +90,7 @@
    <%  
    String com_codigo = request.getParameter("com_codigo");  
    String tpg_codigo = request.getParameter("tpg_codigo");  
-   String for_codigo = request.getParameter("for_codigoo");  
+   String for_codigo = request.getParameter("for_codigo");  
    String nf_codigo = request.getParameter("nf_codigo"); 
    String com_datacompra = request.getParameter("com_datacompra");
    String com_valortotal = request.getParameter("com_valortotal"); 
