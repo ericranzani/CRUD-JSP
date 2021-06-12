@@ -172,7 +172,7 @@ public class Conexao_funcionario {
             String query = "insert into tb_funcionario(fun_codigo,fun_nome,"
                     + "fun_endereco,fun_numero,fun_complemento,fun_bairro,fun_cidade,fun_uf,"
                     + "fun_cnpjcpf,fun_rgie,fun_sexo,fun_nascimento,fun_telefone,"
-                    + "fun_telefone,fun_celular,fun_email,fun_salario) values("+fun_codigo+","
+                    + "fun_celular,fun_email,fun_salario) values("+fun_codigo+","
                     + "\""+fun_nome+"\","
                     + "\""+fun_endereco+"\","
                     + "\""+fun_numero+"\","
