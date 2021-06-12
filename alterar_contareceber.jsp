@@ -15,7 +15,7 @@
  <jsp:setProperty name="con" property="cr_valorconta" value='<%=(request.getParameter("cr_valorcontaField"))%>'/>   
  <jsp:setProperty name="con" property="cr_datavencimento" value='<%=(request.getParameter("cr_datavencimentoField"))%>'/>   
  <jsp:setProperty name="con" property="cr_datarecebimento" value='<%=(request.getParameter("cr_datarecebimentoField"))%>'/>   
- <jsp:setProperty name="con" property="nf_codigo" value='<%=(request.getParameter("nf_codigoField"))%>'/>   
+ <jsp:setProperty name="con" property="nf_codigo" value='<%=Integer.parseInt(request.getParameter("nf_codigoField"))%>'/>   
  <jsp:setProperty name="con" property="cr_observacoes" value='<%=(request.getParameter("cr_observacoesField"))%>'/>   
  
  
@@ -78,7 +78,7 @@
           </tr>  
           <%}  
        }else{  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/contareceber.jsp?status=Registro não encontrado");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/contareceber.jsp?status=Registro não encontrado");  
        }     
     }catch (Exception e) {  
        e.printStackTrace();  

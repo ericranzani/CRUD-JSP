@@ -17,7 +17,7 @@
        if (testa)  
        {           
           ResultSet temp = con.getResultado();  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/produtos.jsp?status=Consulta efetuada com sucesso&pro_codigo="+  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/produtos.jsp?status=Consulta efetuada com sucesso&pro_codigo="+  
              temp.getString("pro_codigo")+
       			 "&pro_descricao="+temp.getString("pro_descricao")+
              "&tpp_codigo="+temp.getString("tpp_codigo")+
@@ -27,7 +27,7 @@
              "&pro_embalagem="+temp.getString("pro_embalagem")+
       			 "&pro_ipi="+temp.getString("pro_ipi"));  
        }else{  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/produtos.jsp?status=Registro não encontrado");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/produtos.jsp?status=Registro não encontrado");  
        }  
             
                

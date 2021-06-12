@@ -43,9 +43,9 @@
     try {  
    
        con.setCom_codigo(Integer.parseInt(request.getParameter("com_codigoField")));  
-       con.setTpg_codigo(request.getParameter("tpg_codigoField"));  
-       con.setFor_codigo(request.getParameter("for_codigoField")); 
-       con.setNf_codigo(request.getParameter("nf_codigoField")); 
+       con.setTpg_codigo(Integer.parseInt(request.getParameter("tpg_codigoField")));  
+       con.setFor_codigo(Integer.parseInt(request.getParameter("for_codigoField"))); 
+       con.setNf_codigo(Integer.parseInt(request.getParameter("nf_codigoField"))); 
        con.setCom_datacompra(request.getParameter("com_datacompraField")); 
        con.setCom_valortotal(request.getParameter("com_valortotalField")); 
        con.setCom_observacoes(request.getParameter("com_observacoesField")); 
@@ -56,7 +56,7 @@
        temp.next();  
          
        if(request.getParameter("com_codigoField").equals(temp.getString("com_codigo")))  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/compras.jsp?status=Registro já existente");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/compras.jsp?status=Registro já existente");  
          
        do{  
        %>  

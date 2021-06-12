@@ -52,7 +52,7 @@
        temp.next();  
          
        if(request.getParameter("cr_codigoField").equals(temp.getString("cr_codigo")))  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/contareceber.jsp?status=Registro já existente");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/contareceber.jsp?status=Registro já existente");  
          
        do{  
        %>  

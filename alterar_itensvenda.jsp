@@ -12,12 +12,12 @@
  <form name="form1" method="post" action="itensvenda.jsp">  
    
  <jsp:setProperty name="con" property="itensvenda_codigo" value='<%=Integer.parseInt(request.getParameter("itensvenda_codigoField"))%>'/>  
- <jsp:setProperty name="con" property="ven_codigo" value='<%=(request.getParameter("ven_codigoField"))%>'/>   
- <jsp:setProperty name="con" property="pro_codigo" value='<%=(request.getParameter("pro_codigoField"))%>'/>   
- <jsp:setProperty name="con" property="tpp_codigo" value='<%=(request.getParameter("tpp_codigoField"))%>'/>  
- <jsp:setProperty name="con" property="nf_codigo" value='<%=(request.getParameter("nf_codigoField"))%>'/>   
- <jsp:setProperty name="con" property="tpg_codigo" value='<%=(request.getParameter("tpg_codigoField"))%>'/>   
- <jsp:setProperty name="con" property="fun_codigo" value='<%=(request.getParameter("fun_codigoField"))%>'/>  
+ <jsp:setProperty name="con" property="ven_codigo" value='<%=Integer.parseInt(request.getParameter("ven_codigoField"))%>'/>   
+ <jsp:setProperty name="con" property="pro_codigo" value='<%=Integer.parseInt(request.getParameter("pro_codigoField"))%>'/>   
+ <jsp:setProperty name="con" property="tpp_codigo" value='<%=Integer.parseInt(request.getParameter("tpp_codigoField"))%>'/>  
+ <jsp:setProperty name="con" property="nf_codigo" value='<%=Integer.parseInt(request.getParameter("nf_codigoField"))%>'/>   
+ <jsp:setProperty name="con" property="tpg_codigo" value='<%=Integer.parseInt(request.getParameter("tpg_codigoField"))%>'/>   
+ <jsp:setProperty name="con" property="fun_codigo" value='<%=Integer.parseInt(request.getParameter("fun_codigoField"))%>'/>  
  <jsp:setProperty name="con" property="itv_embalagem" value='<%=(request.getParameter("itv_embalagemField"))%>'/>  
  <jsp:setProperty name="con" property="itv_qtde" value='<%=(request.getParameter("itv_qtdeField"))%>'/>   
  <jsp:setProperty name="con" property="itv_valorun" value='<%=(request.getParameter("itv_valorunField"))%>'/>   
@@ -119,7 +119,7 @@
        </tr>  
           <%}  
        }else{  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/itensvenda.jsp?status=Registro não encontrado");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/itensvenda.jsp?status=Registro não encontrado");  
        }     
     }catch (Exception e) {  
        e.printStackTrace();  

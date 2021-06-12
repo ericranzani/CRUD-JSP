@@ -17,11 +17,11 @@
        if (testa)  
        {           
           ResultSet temp = con.getResultado();  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/tipoproduto.jsp?status=Consulta efetuada com sucesso&tpp_codigo="+  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/tipoproduto.jsp?status=Consulta efetuada com sucesso&tpp_codigo="+  
              temp.getString("tpp_codigo")+
       			 "&tpp_descricao="+temp.getString("tpp_descricao"));  
        }else{  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/tipoproduto.jsp?status=Registro não encontrado");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/tipoproduto.jsp?status=Registro não encontrado");  
        }  
             
                

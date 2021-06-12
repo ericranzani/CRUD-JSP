@@ -17,7 +17,7 @@
        if (testa)  
        {           
           ResultSet temp = con.getResultado();  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/funcionario.jsp?status=Consulta efetuada com sucesso&fun_codigo="+  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/funcionario.jsp?status=Consulta efetuada com sucesso&fun_codigo="+  
              temp.getString("fun_codigo")+
       			 "&fun_nome="+temp.getString("fun_nome")+
              "&fun_endereco="+temp.getString("fun_endereco")+
@@ -35,7 +35,7 @@
              "&fun_email="+temp.getString("fun_email")+
       			 "&fun_salario="+temp.getString("fun_salario"));  
        }else{  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/funcionario.jsp?status=Registro não encontrado");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/funcionario.jsp?status=Registro não encontrado");  
        }  
             
                

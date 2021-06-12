@@ -17,7 +17,7 @@
        if (testa)  
        {           
           ResultSet temp = con.getResultado();  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/fornecedor.jsp?status=Consulta efetuada com sucesso&for_codigo="+  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/fornecedor.jsp?status=Consulta efetuada com sucesso&for_codigo="+  
              temp.getString("for_codigo")+
       			 "&for_nome="+temp.getString("for_nome")+
              "&for_endereco="+temp.getString("for_endereco")+
@@ -32,7 +32,7 @@
              "&for_celular="+temp.getString("for_celular")+
       			 "&for_email="+temp.getString("for_email"));  
        }else{  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/fornecedor.jsp?status=Registro não encontrado");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/fornecedor.jsp?status=Registro não encontrado");  
        }  
             
                

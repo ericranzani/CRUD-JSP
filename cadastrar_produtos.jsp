@@ -47,7 +47,7 @@
    
        con.setPro_codigo(Integer.parseInt(request.getParameter("pro_codigoField")));
        con.setPro_descricao(request.getParameter("pro_descricaoField"));           
-       con.setTpp_codigo(request.getParameter("tpp_codigoField"));  
+       con.setTpp_codigo(Integer.parseInt(request.getParameter("tpp_codigoField")));  
        con.setPro_precocusto(request.getParameter("pro_precocustoField"));
        con.setPro_precovenda(request.getParameter("pro_precovendaField"));
        con.setPro_estoque(request.getParameter("pro_estoqueField"));
@@ -60,7 +60,7 @@
        temp.next();  
          
        if(request.getParameter("pro_codigoField").equals(temp.getString("pro_codigo")))  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/produtos.jsp?status=Registro já existente");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/produtos.jsp?status=Registro já existente");  
          
        do{  
        %>  

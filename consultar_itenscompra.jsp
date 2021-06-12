@@ -17,7 +17,7 @@
        if (testa)  
        {           
           ResultSet temp = con.getResultado();  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/itenscompra.jsp?status=Consulta efetuada com sucesso&itenscompra_codigo="+  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/itenscompra.jsp?status=Consulta efetuada com sucesso&itenscompra_codigo="+  
              temp.getString("itenscompra_codigo")+
              "&com_codigo="+temp.getString("com_codigo")+
       			 "&pro_codigo="+temp.getString("pro_codigo")+
@@ -31,7 +31,7 @@
              "&itc_desc="+temp.getString("itc_desc")+
       			 "&itc_valortotal="+temp.getString("itc_valortotal"));  
        }else{  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/itenscompra.jsp?status=Registro não encontrado");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/itenscompra.jsp?status=Registro não encontrado");  
        }  
             
                

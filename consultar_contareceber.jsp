@@ -17,7 +17,7 @@
        if (testa)  
        {           
           ResultSet temp = con.getResultado();  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/contareceber.jsp?status=Consulta efetuada com sucesso&cr_codigo="+  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/contareceber.jsp?status=Consulta efetuada com sucesso&cr_codigo="+  
              temp.getString("cr_codigo")+
 			 "&cr_valorconta="+temp.getString("cr_valorconta")+
 			 "&cr_datavencimento="+temp.getString("cr_datavencimento")+
@@ -25,7 +25,7 @@
        "&nf_codigo="+temp.getString("nf_codigo")+
 			 "&cr_observacoes="+temp.getString("cr_observacoes"));  
        }else{  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/contareceber.jsp?status=Registro não encontrado");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/contareceber.jsp?status=Registro não encontrado");  
        }  
             
                

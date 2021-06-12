@@ -59,7 +59,7 @@
           <%}  
        }  
        else{  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/tipopagto.jsp?status=Registro não encontrado");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/tipopagto.jsp?status=Registro não encontrado");  
        }     
     }catch (Exception e) {  
        e.printStackTrace();  

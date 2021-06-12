@@ -43,7 +43,7 @@
        con.setCp_valorconta(request.getParameter("cp_valorcontaField"));  
 	     con.setCp_datavencimento(request.getParameter("cp_datavencimentoField"));  
 	     con.setCp_datapagamento(request.getParameter("cp_datapagamentoField")); 
-       con.setNf_codigo(request.getParameter("nf_codigoField"));  
+       con.setNf_codigo(Integer.parseInt(request.getParameter("nf_codigoField")));  
        con.setCp_observacoes(request.getParameter("cp_observacoesField")); 
        con.inserirDados();  
                   
@@ -52,7 +52,7 @@
        temp.next();  
          
        if(request.getParameter("cp_codigoField").equals(temp.getString("cp_codigo")))  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/contapagar.jsp?status=Registro já existente");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/contapagar.jsp?status=Registro já existente");  
          
        do{  
        %>  

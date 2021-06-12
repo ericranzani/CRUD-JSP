@@ -36,7 +36,7 @@
        temp.next();  
          
        if(request.getParameter("tpp_codigoField").equals(temp.getString("tpp_codigo")))  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/tipoproduto.jsp?status=Registro já existente");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/tipoproduto.jsp?status=Registro já existente");  
          
        do{  
        %>  

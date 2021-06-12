@@ -17,7 +17,7 @@
        if (testa)  
        {           
           ResultSet temp = con.getResultado();  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/vendas.jsp?status=Consulta efetuada com sucesso&ven_codigo="+  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/vendas.jsp?status=Consulta efetuada com sucesso&ven_codigo="+  
              temp.getString("ven_codigo")+
              "&fun_codigo="+temp.getString("fun_codigo")+
       			 "&tpg_codigo="+temp.getString("tpg_codigo")+
@@ -26,7 +26,7 @@
              "&ven_valortotal="+temp.getString("ven_valortotal")+
       			 "&ven_observacoes="+temp.getString("ven_observacoes"));  
        }else{  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/vendas.jsp?status=Registro não encontrado");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/vendas.jsp?status=Registro não encontrado");  
        }  
             
                

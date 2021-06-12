@@ -17,13 +17,13 @@
        if (testa)  
        {           
           ResultSet temp = con.getResultado();  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/tipopagto.jsp?status=Consulta efetuada com sucesso&tpg_codigo="+  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/tipopagto.jsp?status=Consulta efetuada com sucesso&tpg_codigo="+  
              temp.getString("tpg_codigo")+
       			 "&tpg_descricao="+temp.getString("tpg_descricao")+
              "&tpg_qtde="+temp.getString("tpg_qtde")+
       			 "&tpg_ativo="+temp.getString("tpg_ativo"));  
        }else{  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/tipopagto.jsp?status=Registro não encontrado");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/tipopagto.jsp?status=Registro não encontrado");  
        }  
             
                

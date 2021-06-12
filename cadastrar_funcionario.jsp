@@ -92,7 +92,7 @@
        temp.next();  
          
        if(request.getParameter("fun_codigoField").equals(temp.getString("fun_codigo")))  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/funcionario.jsp?status=Registro já existente");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/funcionario.jsp?status=Registro já existente");  
          
        do{  
        %>  

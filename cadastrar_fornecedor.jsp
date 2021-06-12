@@ -80,7 +80,7 @@
        temp.next();  
          
        if(request.getParameter("for_codigoField").equals(temp.getString("for_codigo")))  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/fornecedor.jsp?status=Registro já existente");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/fornecedor.jsp?status=Registro já existente");  
          
        do{  
        %>  

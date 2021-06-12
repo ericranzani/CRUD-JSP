@@ -55,16 +55,16 @@
            <td width=50>  
                 <%out.print(temp.getString("nf_valornf"));%>  
           </td>  
-		   <td width=50>  
+		      <td width=50>  
                 <%out.print(temp.getString("nf_taxaimpostonf"));%>  
           </td>  
-		   <td width=50>  
+		      <td width=50>  
                 <%out.print(temp.getString("nf_valorimposto"));%>  
           </td>  
        </tr>  
           <%}  
        }else{  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/notafiscal.jsp?status=Registro não encontrado");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/notafiscal.jsp?status=Registro não encontrado");  
        }     
     }catch (Exception e) {  
        e.printStackTrace();  

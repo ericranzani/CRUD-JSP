@@ -44,7 +44,7 @@
        temp.next();  
          
        if(request.getParameter("tpg_codigoField").equals(temp.getString("tpg_codigo")))  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/tipopagto.jsp?status=Registro já existente");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/tipopagto.jsp?status=Registro já existente");  
          
        do{  
        %>  

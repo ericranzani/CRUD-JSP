@@ -83,7 +83,7 @@
           <%}  
        }  
        else{  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/produtos.jsp?status=Registro não encontrado");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/produtos.jsp?status=Registro não encontrado");  
        }     
     }catch (Exception e) {  
        e.printStackTrace();  

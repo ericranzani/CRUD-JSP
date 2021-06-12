@@ -17,7 +17,7 @@
        if (testa)  
        {           
           ResultSet temp = con.getResultado();  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/itensvenda.jsp?status=Consulta efetuada com sucesso&itensvenda_codigo="+  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/itensvenda.jsp?status=Consulta efetuada com sucesso&itensvenda_codigo="+  
              temp.getString("itensvenda_codigo")+
              "&ven_codigo="+temp.getString("ven_codigo")+
       			 "&pro_codigo="+temp.getString("pro_codigo")+
@@ -31,7 +31,7 @@
              "&itv_desc="+temp.getString("itv_desc")+
       			 "&itv_valortotal="+temp.getString("itv_valortotal"));  
        }else{  
-          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/itensvenda.jsp?status=Registro não encontrado");  
+          response.sendRedirect("http://localhost:8084/sistema_loja_noturno/menu/itensvenda.jsp?status=Registro não encontrado");  
        }  
             
                
