@@ -60,7 +60,7 @@
        con.setItenscompra_codigo(Integer.parseInt(request.getParameter("itenscompra_codigoField")));
        con.setCom_codigo(Integer.parseInt(request.getParameter("com_codigoField")));   
        con.setPro_codigo(Integer.parseInt(request.getParameter("pro_codigoField")));         
-       con.setTpp_codigo((Integer.parseInt(request.getParameter("tpp_codigoField"))); 
+       con.setTpp_codigo(Integer.parseInt(request.getParameter("tpp_codigoField"))); 
        con.setNf_codigo(Integer.parseInt(request.getParameter("nf_codigoField"))); 
        con.setFor_codigo(Integer.parseInt(request.getParameter("for_codigoField"))); 
        con.setTpg_codigo(Integer.parseInt(request.getParameter("tpg_codigoField"))); 
